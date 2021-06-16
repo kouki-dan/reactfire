@@ -77,7 +77,7 @@ npm install --save firebase reactfire
 
 1. _Register_ the app.
 
-1. Copy the Firebase configuration. This will be used in Step 4.
+1. Copy the Firebase configuration. This will be used in Step 5.
 
 1. _Continue to Console_
 
@@ -145,7 +145,7 @@ npm install --save firebase reactfire
      const burrito = useFirestoreDocData(burritoRef);
 
      // get the value from the doc
-     const isYummy = burrito.yummy;
+     const isYummy = burrito.data.yummy;
 
      return <p>The burrito is {isYummy ? 'good' : 'bad'}</p>;
    }
